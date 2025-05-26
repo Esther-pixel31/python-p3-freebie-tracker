@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Base, Company, Dev, Freebie
 
-DATABASE_URL = 'sqlite:///freebies.db'  # Make sure it matches your seed.py
+DATABASE_URL = 'sqlite:///freebies.db'  
 
 def debug():
     engine = create_engine(DATABASE_URL)
